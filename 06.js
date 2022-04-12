@@ -4,7 +4,7 @@
 function digital_root(n) {
     n = n.toString()
     while (n.length > 1){
-        n = Array.from(n).reduce(function (e,i){ return parseInt(e) + parseInt(i)}).toString() 
+        n = Array.from(n).reduce((e,i) => parseInt(e) + parseInt(i)).toString() 
     }
     return parseInt(n)
 }
